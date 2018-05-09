@@ -4,10 +4,257 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>WCLG</title>
+  <link rel="stylesheet" href="/../1css/style.css">
+  <title>Home Page</title>
 </head>
+<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+<style media="screen">
+
+body,html{
+  height: 100%;
+  margin:0%;
+  font-size:16px;
+  font-family: "itim;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+  top: 0;
+  color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+
+body,html{
+  height: 100%;
+  margin:0%;
+  font-size:16px;
+  font-family: "itim;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Navigation */
+
+nav{
+    background-color: black;
+    color: #fff;
+    width:1200px;
+    margin: 0 auto;
+  }
+
+  nav ul{
+    list-style: none;
+  }
+
+  nav ul li{
+    float:left;
+    width:120px;
+    height:50px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 0px;
+    /* height: inherit; */
+    display: block;
+    /* opacity: 0.70; */
+  }
+
+  nav ul li a:hover{
+    background-color: green;
+  }
+
+  nav ul li ul{
+    position: relative;
+    display: none;
+
+  }
+
+  nav ul li:hover ul{
+    display:block;
+  }
+
+
+  #vid-h2{
+    margin: 0 auto;
+    text-decoration-color: white;
+    text color: white;
+  }
+
+  div#wcg{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    min-height: 100vh;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  h2 {
+    font-family: Permanent Marker;
+    font-size: 8vmin;
+    text-align: center;
+    margin: 2rem 0rem 0;
+    color: #fff;
+    text-shadow: 2px 2px 8px blue;
+    /* mix-blend-mode: exclusion; */
+  }
+h3{
+  font-family: Permanent Marker;
+  font-size: 5vmin;
+  text-align: center;
+  margin: 2rem 0rem 0;
+  color: #fff;
+  text-shadow: 2px 2px 8px blue;
+}
+
+#wc12{
+  display: inline-block;
+  text-align: left;
+  margin-left: 0 auto;
+  max-height: 250px;
+  padding-top: 50%;
+  color: white;
+  font-size: 3.2vmin;
+}
+#wc13{
+
+  color: yellow;
+  /* font-size: 3.2vmin; */
+}
+</style>
 <body>
-<h1>Testing</h1>
-<h2>yes</h2>
+
+  <nav>
+    <ul>
+      <li><a href="../C&L/index.html">Home
+        <ul>
+          <!-- <li><a href="#">Home</li> -->
+          <li><a href="#">What To Expect</li>
+          <li><a href="#">About Us</li>
+          <li><a href="#">Our Purpose</li>
+          <li><a href="#">What We Beleive</li>
+          <!-- <li><a href="#">Staff</li> -->
+          <!-- <li><a href="#">Member Directory</li> -->
+        </ul>
+      </li>
+      <li><a href="#">Church Events
+        <ul>
+          <li><a href="#">Future Events</li>
+          <li><a href="#">Calendar</li>
+        </ul>
+      </li>
+      <li><a href="../album/index.html">Photos & Videos</li>
+      <li><a href="../alpha/index.html">Pastor</li>
+      <li><a href="#">Contact Us
+       <ul>
+         <li><a href="#">Contact</li>
+         <li><a href="#">Location</li>
+       </ul>
+      </li>
+      <li><a href="#">Visitors
+        <ul>
+          <li><a href="#">First Time Visitor</li>
+          <!-- <li><a href="#">Prayer / Praise</li> -->
+          <li><a href="#">Training & Education</li>
+          <li><a href="../request/index.html">Prayer Request</li>
+        </ul>
+      </li>
+      <li><a href="../Donation/index.html">Gifts Online</li>
+    </ul>
+  </nav>
+
+  <div class="video-background">
+      <div class="video-foreground">
+        <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  <div id="vidtop-content">
+  <div class="vid-info">
+    <span class="border">
+      <h3>WCLG </h3>
+    </span>
+
+  </div>
+  </div>
+
+  <div id="wcg">
+    <center><h2 id="wc1">Worlds Church Of The Living God Of Port St. Lucie FL.</h2> <br> <h3>Pastor Wallace Welch</h3></center><br>
+    <p id="wc13">"Where A Man Will Lay Down His Life For A Friend"</p>
+  </div>
+
+
+<center><p id="wc12">(KJV) John 3:16
+For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life..</p></center>
+
+
+
+
+
+  <footer>
+    <a href="#"><i class="fa fa-youtube"style="font-size:30px"></i> </a>
+    <a href="#"><i class="fa fa-instagram"style="font-size:30px"></i> </a>
+    <a href="#"><i class="fa fa-google plus"style="font-size:30px"></i> </a>
+    <a href="#"><i class="fa fa-twiter"style="font-size:30px"></i> </a>
+    <a href="#"><i class="fa fa-envelope"style="font-size:30px"></i> </a>
+    <a href="#"><i class="fa fa-phone"style="font-size:30px"></i> </a><br>
+</footer>
 </body>
+
 </html>
+<script text=JavaScript src="1.js">
